@@ -4,7 +4,9 @@ from hexbytes import HexBytes
 from datetime import datetime
 from collections import defaultdict
 import time, random
+import datetime as dt
 
+st.caption("BUILD: " + dt.datetime.utcnow().isoformat() + "Z")
 st.set_page_config(page_title="On-Chain Token Analyzer", layout="wide")
 
 st.title("On-Chain Token Analyzer")
@@ -15,7 +17,7 @@ with st.expander("Inputs"):
         with col1:
             rpc_primary = st.text_input(
                 "Primary RPC",
-                "https://mainnet.infura.io/v3/40932ea998e940ba943016f25e09246c",
+                "",
             ).strip()
             rpc_fallback = st.text_input(
                 "Fallback RPC",

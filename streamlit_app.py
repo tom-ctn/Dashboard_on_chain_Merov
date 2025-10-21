@@ -25,7 +25,7 @@ with st.expander("Inputs"):
             ).strip()
             token_addr = st.text_input(
                 "Token Address (ERC-20)",
-                "0xB8c77482e45F1F44dE1745F52C74426C631bDD52",
+                "",
             ).strip()
             lookback = st.number_input(
                 "Block lookback (latest N blocks)", min_value=100, max_value=200000, value=2000, step=100
@@ -42,16 +42,7 @@ with st.expander("Inputs"):
             boundary_str = st.text_area(
                 "Boundary set (top holders, treasury, vaults… one per line)",
                 "\n".join([
-                    "0xF977814e90dA44bFA03b6295A0616a897441aceC",
-                    "0x480234599362dC7a76cd99D09738A626F6d77e5F",
-                    "0xA73d9021f67931563fDfe3E8f66261086319a1FC",
-                    "0xB8c77482e45F1F44dE1745F52C74426C631bDD52",
-                    "0xD041AF244d15456AEdFaB358fa80D6e454f3bd27",
-                    "0xf60c2Ea62EDBfE808163751DD0d8693DCb30019c",
-                    "0x00f435FA1f4297D58644a5C96b75e26D45F9EA4B",
-                    "0x424DBEd38cd0D83b13E2A150F86710Fb445680Cb",
-                    "0x543E991e712bB51804D7Dc86924B6D4E9819542A",
-                    "0x00897A5A07070dFb2817788802A2Bb70aa324ECC",
+                    
                 ]),
                 height=160,
             )
